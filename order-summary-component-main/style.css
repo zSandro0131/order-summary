@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.main-container{
+    background-color: #fff;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.38rem;
+}
+
+
+picture .main-image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.content-container h1{
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.67rem;
+}
+
+.main-p{
+    color: hsl(224, 23%, 55%);
+}
+
+
+.content-container p{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.plan-description{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 12px;
+
+}
+
+.plan-description p{
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.price{
+    color: hsl(224, 23%, 55%);
+}
+
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btns button{
+    margin-top: 32px;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 12px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+}
+
+.btns a{
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 375px) {
+    
+    body{
+        margin: 30px 20px;
+    }
+
+    picture .main-image{
+        width: 320px;
+    }
+
+    .main-container{
+        width: 320px;
+    }
+
+    .content-container h1{
+        font-size: 25px;
+    }
+
+    .main-p{
+        font-size: 14px;
+    }
+
+    .plan-description{
+        width: 100%;
+
+    }
+
+    .annual-plan{
+        font-size: 15px;
+    }
+
+    .price{
+        font-size: 15px;
+    }
+
+    .plan-description a{
+        margin-left: 15px;
+    }
+
+    .plan-description img{
+        width: 40px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body{
+        margin: 20px 20px;
+    }
+
+    picture .main-image{
+        width: 400px;
+    }
+
+    .main-container{
+        width: 400px;
+    }
+}
